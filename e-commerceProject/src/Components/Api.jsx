@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 
 const Api = () => {
@@ -10,12 +10,12 @@ const Api = () => {
         axios
             .get(`${url}`)
             .then(({ data }) => setproductsArray(data.results))
-            .catch((error) => console.log("error calling SWAPI", error))
-            console.log(productsArray)
+            .catch((error) => console.log('error calling SWAPI', error))
+        console.log(productsArray)
     }, [])
     return (
         <div>
-        
+
         </div>
     )
 }
